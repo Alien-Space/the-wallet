@@ -1,12 +1,24 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Header from "./src/components/Header";
+import {
+  useFonts,
+  RalewayDots_400Regular,
+} from "@expo-google-fonts/raleway-dots";
+import Routes from "./src/routes";
 
 export default function App() {
+  const [fontsLOaded] = useFonts({
+    RalewayDots_400Regular,
+  });
+  if (!fontsLOaded) {
+    return null;
+  }
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
-      <StatusBar style="auto" />
+      <Routes />
+      {/* <StatusBar style="auto" /> */}
     </View>
   );
 }
@@ -14,8 +26,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#0D1F3C",
+    padding: 24,
+    // alignItems: "center",
+    // justifyContent: "center",
   },
 });
