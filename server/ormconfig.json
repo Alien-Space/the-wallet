@@ -1,0 +1,6 @@
+{
+  "name": "default",
+  "type": "sqlite",
+  "database": "./src/database/data.sqlite",
+  "synchronize": true
+}
