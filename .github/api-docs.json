@@ -1,0 +1,94 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-10-27T22:27:05.113Z",
+  "__export_source": "insomnia.desktop.app:v2020.4.2",
+  "resources": [
+    {
+      "_id": "req_1871de892a8f41a282eaecde1984bb80",
+      "parentId": "fld_55e79950410e40b08c6c4c850cada816",
+      "modified": 1603837595518,
+      "created": 1603837156583,
+      "url": "{{ base_url }}/users",
+      "name": "Create User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Xandinho\",\n\t\"email\": \"jma@mal.cm\",\n\t\"contact\": \"9261525352\",\n\t\"sex\": \"M\",\n\t\"address\": \"Distrito do Kilamba\",\n\t\"password\": \"1234\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_af5ea5030cb84a769df1d805ead26c04"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1603837156584,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_55e79950410e40b08c6c4c850cada816",
+      "parentId": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "modified": 1603837141085,
+      "created": 1603837141085,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1603837141085,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "parentId": null,
+      "modified": 1603837135296,
+      "created": 1603837135296,
+      "name": "TheWallet",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_92fc81010dae20d54bb363f2514f0c56208b4724",
+      "parentId": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "modified": 1603837191541,
+      "created": 1603837135352,
+      "name": "Base Environment",
+      "data": { "base_url": "http://localhost:3333" },
+      "dataPropertyOrder": { "&": ["base_url"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1603837135352,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_92fc81010dae20d54bb363f2514f0c56208b4724",
+      "parentId": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "modified": 1603837135354,
+      "created": 1603837135354,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_2e1bb0ecca6a4aca87d21a3ac83f053f",
+      "parentId": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "modified": 1603837135312,
+      "created": 1603837135312,
+      "fileName": "TheWallet",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
