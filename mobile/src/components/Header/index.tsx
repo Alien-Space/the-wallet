@@ -1,5 +1,4 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
 import logoImage from "../../assets/logotipo/theWallet.png";
 
 import { Container, Image, TextHeader } from "./styles";
