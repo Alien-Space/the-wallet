@@ -1019,6 +1019,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@expo-google-fonts/questrial@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/questrial/-/questrial-0.1.0.tgz#e7c2a9d55260d42c3786935b1702e9f7847fa014"
+  integrity sha512-4cPio5DS3nNjGcfx9dc9WbByy/qgkSXgS2CpaPXVr+/HnDBQj/ns6ZJFZDWn8e7c0pJ4Gyu89Idpn6zsp3uViw==
+
 "@expo-google-fonts/raleway-dots@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/raleway-dots/-/raleway-dots-0.1.0.tgz#8a845e2cf801b1826a7def734cb765c78c9786fe"
