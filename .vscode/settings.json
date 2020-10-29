@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "teste",
+      "database": "${workspaceFolder:the-wallet}/server/src/database/data.sqlite"
+    }
+  ]
+}
