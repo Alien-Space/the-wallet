@@ -26,6 +26,7 @@ export const Form = styled.View`
   padding-right: 20px;
 `;
 export const InputContainer = styled.View`
+  margin-top: 20px;
   flex-direction: row;
   justify-content: space-between;
 `;
