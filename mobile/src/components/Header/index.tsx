@@ -4,7 +4,7 @@ import logoImage from "../../assets/logotipo/theWallet.png";
 import { Container, Image, TextHeader } from "./styles";
 
 interface PropsHeader {
-  title: string;
+  title?: string;
 }
 
 function Header({ title }: PropsHeader) {
