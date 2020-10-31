@@ -11,13 +11,11 @@ import {
   TextNewDocument,
   Form,
   InputContainer,
-  ContainerOne,
-  ContainerTwo,
   ImageCheck,
   ButtonSubmitContainer,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
-import { StyleSheet, Text, TextInput } from "react-native";
+import { StyleSheet, TextInput } from "react-native";
 
 const CreateDocument: React.FC = () => {
   const navigation = useNavigation();
@@ -37,29 +35,43 @@ const CreateDocument: React.FC = () => {
         </Header>
         <TextNewDocument>Novo documento</TextNewDocument>
         <Form>
-          <Text style={styles.labelText}>Nome</Text>
-          <TextInput style={styles.inputText} />
+          <TextInput
+            placeholder="Nome"
+            placeholderTextColor="#FFFF"
+            style={styles.inputText}
+          />
 
-          <Text style={styles.labelText}>Tipo</Text>
-          <TextInput style={styles.inputText} />
+          <TextInput
+            placeholder="Tipo"
+            placeholderTextColor="#FFFF"
+            style={styles.inputText}
+          />
 
           <InputContainer>
-            <ContainerOne>
-              <Text style={styles.labelText}>Emição</Text>
-              <TextInput style={styles.inputTextEmicao} />
-            </ContainerOne>
+            <TextInput
+              placeholder="Emição"
+              placeholderTextColor="#FFFF"
+              style={styles.inputTextEmicao}
+            />
 
-            <ContainerTwo>
-              <Text style={styles.labelText}>Expiração</Text>
-              <TextInput style={styles.inputTextExpiracao} />
-            </ContainerTwo>
+            <TextInput
+              placeholder="Expiração"
+              placeholderTextColor="#FFFF"
+              style={styles.inputTextExpiracao}
+            />
           </InputContainer>
 
-          <Text style={styles.labelText}>Nome do cartão</Text>
-          <TextInput style={styles.inputText} />
+          <TextInput
+            placeholder="Nome do cartão"
+            placeholderTextColor="#FFFF"
+            style={styles.inputText}
+          />
 
-          <Text style={styles.labelText}>Número</Text>
-          <TextInput style={styles.inputText} />
+          <TextInput
+            placeholder="Número"
+            placeholderTextColor="#FFFF"
+            style={styles.inputText}
+          />
 
           <ButtonSubmitContainer>
             <RectButton style={styles.submitButton}>
@@ -81,6 +93,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#0D1F3C",
     opacity: 0.8,
     borderRadius: 6,
+    marginTop: 20,
     color: "#FFF",
     padding: 14,
   },
