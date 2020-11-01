@@ -3,11 +3,11 @@ import { User } from '../database/entities';
 
 interface createSession {
   email: string;
-  password: string;
+  pin: string;
 }
 
 export default class SessionController {
-  async create({ email, password }: createSession) {
+  async create({ email, pin }: createSession) {
     try {
       const userRepository = getRepository(User);
 
@@ -17,13 +17,13 @@ export default class SessionController {
         throw new Error('User does not exists');
       }
 
-      if (userExists.password !== password) {
+      if (userExists.pin !== pin) {
         throw new Error('User password does not match');
       }
 
       return {
         statusCode: 200,
-        content: { ...userExists, password: undefined },
+        content: { ...userExists, pin: undefined },
       };
     } catch (err) {
       return { statusCode: 400, content: { message: err.message } };
