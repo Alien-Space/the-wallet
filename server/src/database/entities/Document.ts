@@ -9,7 +9,7 @@ import { User } from '.';
 
 @Entity('documents')
 export default class Card {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryGeneratedColumn('increment')
   id!: string;
 
   @Column('varchar')
@@ -23,6 +23,12 @@ export default class Card {
 
   @Column('varchar')
   name!: string;
+
+  @Column('datetime')
+  emissionDate!: Date;
+
+  @Column('datetime')
+  expirationDate!: Date;
 
   @ManyToOne(() => User, (user) => user.documents)
   user!: User;
