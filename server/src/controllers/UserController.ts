@@ -4,10 +4,7 @@ import { User } from '../database/entities';
 interface createUser {
   name: string;
   email: string;
-  contact: string;
-  sex: string;
-  address: string;
-  password: string;
+  pin: string;
 }
 
 export default class UserController {

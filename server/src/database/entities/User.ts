@@ -3,7 +3,7 @@ import { Document } from '.';
 
 @Entity('users')
 export default class User {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryGeneratedColumn('increment')
   id!: string;
 
   @Column('varchar', { nullable: false })
@@ -13,16 +13,7 @@ export default class User {
   email!: string;
 
   @Column('varchar')
-  contact!: string;
-
-  @Column('varchar')
-  sex!: string;
-
-  @Column('varchar')
-  address!: string;
-
-  @Column('varchar')
-  password!: string;
+  pin!: string;
 
   @OneToMany(() => Document, (document) => document.id)
   documents!: Document[];
