@@ -1,13 +1,134 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2020-10-27T22:27:05.113Z",
+  "__export_date": "2020-11-01T20:58:09.835Z",
   "__export_source": "insomnia.desktop.app:v2020.4.2",
   "resources": [
     {
+      "_id": "req_f1c779b0d2724dfd89e1a5ff8f5ed909",
+      "parentId": "fld_b160d9996ed644bbbc37508b5d86ecbf",
+      "modified": 1604241272698,
+      "created": 1604241175156,
+      "url": "{{ base_url }}/sessions",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"xandinho@gmail.com\",\n\t\"pin\": \"1234\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_772a4b7237dd4668b0e0df3735b2c6e0"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1604241175156,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b160d9996ed644bbbc37508b5d86ecbf",
+      "parentId": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "modified": 1604241162544,
+      "created": 1604241162544,
+      "name": "Sessions",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1604241162544,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "parentId": null,
+      "modified": 1603837135296,
+      "created": 1603837135296,
+      "name": "TheWallet",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_bbd67d69fb52471f81bf68bdb325269f",
+      "parentId": "fld_d8dc355d8fd6476ca7d91d4bec20639c",
+      "modified": 1604241123914,
+      "created": 1604241107833,
+      "url": "{{ base_url }}/documents/1",
+      "name": "Listar",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1604241107833,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_d8dc355d8fd6476ca7d91d4bec20639c",
+      "parentId": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
+      "modified": 1604234847421,
+      "created": 1604234847421,
+      "name": "Document",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1604234847421,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_4a892ee09dd44f4db937118fd5a13138",
+      "parentId": "fld_d8dc355d8fd6476ca7d91d4bec20639c",
+      "modified": 1604235698483,
+      "created": 1604234866752,
+      "url": "{{ base_url }}/documents",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\"user\": \"1\",\n\"name\": \"google\",\n\"number\": \"12483\",\n\"password\": \"12\",\n\"type\": \"card\",\n\"emissionDate\": \"2019-02-11\",\n\"expirationDate\": \"2020-10-22\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8596bb4ebb1349de8d1c381d89b1578e"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1604234866752,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_1871de892a8f41a282eaecde1984bb80",
       "parentId": "fld_55e79950410e40b08c6c4c850cada816",
-      "modified": 1603837595518,
+      "modified": 1604241235818,
       "created": 1603837156583,
       "url": "{{ base_url }}/users",
       "name": "Create User",
@@ -15,7 +136,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"Xandinho\",\n\t\"email\": \"jma@mal.cm\",\n\t\"contact\": \"9261525352\",\n\t\"sex\": \"M\",\n\t\"address\": \"Distrito do Kilamba\",\n\t\"password\": \"1234\"\n}"
+        "text": "{\n\t\"name\": \"Xandinho\",\n\t\"email\": \"xandinho@gmail.com\",\n\t\"pin\": \"1234\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -47,16 +168,6 @@
       "environmentPropertyOrder": null,
       "metaSortKey": -1603837141085,
       "_type": "request_group"
-    },
-    {
-      "_id": "wrk_be6c2b57e79d4719bafb1402c43d9dc6",
-      "parentId": null,
-      "modified": 1603837135296,
-      "created": 1603837135296,
-      "name": "TheWallet",
-      "description": "",
-      "scope": null,
-      "_type": "workspace"
     },
     {
       "_id": "env_92fc81010dae20d54bb363f2514f0c56208b4724",
