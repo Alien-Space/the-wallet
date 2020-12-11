@@ -10,15 +10,7 @@ export const Header = styled.View`
   max-width: 98%;
 `;
 export const Image = styled.Image``;
-export const ImageBack = styled.Image``;
-export const TextNewDocument = styled.Text`
-  margin-top: 20%;
-  color: #fff;
-  font-size: 25px;
-  font-family: Questrial_400Regular;
-`;
-export const Form = styled.View`
-  margin-top: 5%;
+export const ImageBack = styled.Image`
   border-radius: 20px;
   background-color: #fbfbfb;
   height: 500px;
