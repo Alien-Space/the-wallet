@@ -1,7 +1,10 @@
 import styled from "styled-components/native";
 import { RectButton } from "react-native-gesture-handler";
 
-export const Container = styled.View``;
+export const Container = styled.View`
+  flex: 1;
+  background-color: #0d1f3c;
+`;
 
 export const MenuOption = styled(RectButton)`
   align-items: center;
